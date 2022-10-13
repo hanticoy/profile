@@ -4,6 +4,7 @@
 .main {
     justify-content: space-between;
     width: 80%;
+    margin: 0px auto;
 }
 header {
     background-color: black;
@@ -44,6 +45,7 @@ aside {
     justify-content: space-around;
     margin: 1px;
     border-color: black;  
+
 }
 footer {
     background-color: darkgray;
