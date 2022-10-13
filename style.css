@@ -13,6 +13,27 @@ nav {
     justify-content: space-around;
     display:flex;
 }
+.navbar {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding: 10px;
+}   
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.btn {
+    color: antiquewhite;
+    background-color: dodgerblue;
+    box-shadow: 2px 2px 2px 1px rgba(188, 188, 221, 0.767);
+    vertical-align: middle;
+    cursor: pointer;
+} 
+
+
 aside {
     margin: 0px;
     flex-direction: column-reverse;
@@ -22,7 +43,7 @@ aside {
     display: flex;
     justify-content: space-around;
     margin: 1px;
-    border-color: black;    
+    border-color: black;  
 }
 footer {
     background-color: darkgray;
