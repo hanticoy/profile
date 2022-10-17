@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio Css Profile</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -28,11 +29,11 @@
                     <div class="section-1">
                         <div class="targetDesc1">
                             <img class="imagen" src="images/jenktocat.jpg" alt="">
-                            <h1>Hugo Anticoy</h1>
+                            <h1 id="nombrePersona">Hugo Anticoy</h1>
                             <h3><img class="icon" src="images/location-vector-icon.jpg" alt=""> Santiago</h3>
                             <h6>Desarrollador | Ingeniero | Resolutor de Problemas <br> Master of Shadow and the
-                                Internet</h6>
-                            <h5><img class="icon" src="images/engranaje.jpg" alt=""> Modificar Perfil</h5>
+                                Internet</h6>   
+                            <h5><img class="icon" src="images/engranaje.jpg" alt=""><a href="javascript:modificarPerfil()">Modificar Perfil</a></h5>
                         </div>
                     </div>
                     <div class="section-2"></div>
@@ -58,20 +59,20 @@
                     <section class="tarjeta2">
                         <div class="section-3">
                             <div class="targetDesc2">
-                                <h1><button type="button" id="btnaside1">+</button> Connection Request</h1>
+                                <h1><button type="button" id="btnaside1"><p id="cantConnRequest">2</p></button> Connection Request</h1>
                             </div>
                         </div>
                         <div class="section-4">
                             <div class="targetDesc2">
-                                <ul class="lista">
+                                <ul class="lista" id="userRequest">
                                     <li><img class="persona" src="images/adrien-s.jpg" alt=""> <b>Tod E</b></li>
-                                    <li><img class="icon2" src="icons/accept-circle.png" alt=""></li>
-                                    <li><img class="icon2" src="icons/close-circle.png" alt=""></li>
+                                    <li><a href="#"><img class="icon2" src="icons/accept-circle.png"  onclick="agregaUserConn('Tod E',0)"></a></li>
+                                    <li><a href="#"><img class="icon2" src="icons/close-circle.png"  onclick="eliminaUserRequest(0)"></a></li>
                                 </ul>
-                                <ul class="lista">
+                                <ul class="lista" id="userRequest">
                                     <li><img class="persona" src="images/alayne-s.jpg" alt=""> <b>Phil</b></li>
-                                    <li><img class="icon2" src="icons/accept-circle.png" alt=""></li>
-                                    <li><img class="icon2" src="icons/close-circle.png" alt=""></li>
+                                    <li><a href="#"><img class="icon2" src="icons/accept-circle.png"  onclick="agregaUserConn('Phil',1)"></a></li>
+                                    <li><a href="#"><img class="icon2" src="icons/close-circle.png" onclick="eliminaUserRequest(1)"></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -81,20 +82,16 @@
                     <section class="tarjeta2">
                         <div class="section-3">
                             <div class="targetDesc2">
-                                <h1><button type="button" id="btnaside2">+500</button> Your Connections</h1>
+                                <h1><button type="button" id="btnaside2"><p id="cantConnect">+500</p></button> Your Connections</h1>
                             </div>
                         </div>
                         <div class="section-4">
-                            <div class="targetDesc2">
-                                <ul class="lista">
-                                    <li><img class="persona" src="images/adrien-s.jpg" alt=""> <b>Tod E</b></li>
-                                    <li><img class="icon2" src="icons/accept-circle.png" alt=""></li>
-                                    <li><img class="icon2" src="icons/close-circle.png" alt=""></li>
+                            <div class="targetDesc2" id="userConnList" >
+                                <ul class="lista" id="userConn">
+                                    <li><img class="persona" src="images/adrien-s.jpg" alt=""> <b>Juan E</b></li>
                                 </ul>
                                 <ul class="lista">
-                                    <li><img class="persona" src="images/anne-s.jpg" alt=""> <b>Tod E</b></li>
-                                    <li><img class="icon2" src="icons/accept-circle.png" alt=""></li>
-                                    <li><img class="icon2" src="icons/close-circle.png" alt=""></li>
+                                    <li><img class="persona" src="images/anne-s.jpg" alt=""> <b>Jane K</b></li>
                                 </ul>
 
                             </div>
